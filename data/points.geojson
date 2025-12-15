@@ -2,7 +2,6 @@
   "type": "FeatureCollection",
   "features": [
   
-    // TIDE CATEGORY
     {
       "type": "Feature",
       "geometry": {
@@ -169,7 +168,7 @@
       }
     },
 
-    // SEDIMENT CATEGORY
+
     {
       "type": "Feature",
       "geometry": {
@@ -261,7 +260,7 @@
       }
     },
 
-    // OCEAN WAVE
+    
     {
       "type": "Feature",
       "geometry": {
@@ -310,7 +309,7 @@
       }
     },
 
-    // Marine Pollution
+    
     {
       "type": "Feature",
       "geometry": {
@@ -327,7 +326,7 @@
       }
     },
 
-    // Fishery
+   
     {
       "type": "Feature",
       "geometry": {
@@ -418,7 +417,7 @@
         "categories": ["Fishery"]
       }
     },
-    // ECOLOGY BIOTA
+    
     {
       "type": "Feature",
       "geometry": {
@@ -435,7 +434,7 @@
       }
     },
 
-    // DISASTER MITIGATION
+    
     {
       "type": "Feature",
       "geometry": {
@@ -497,7 +496,7 @@
       }
     },
 
-    // CLIMATOLOGY AND METEOROLOGY ATMOSPHERE
+    
     {
       "type": "Feature",
       "geometry": {
@@ -694,7 +693,7 @@
       }
     },
 
-    // CHEMISTRY
+    
     {
       "type": "Feature",
       "geometry": {
