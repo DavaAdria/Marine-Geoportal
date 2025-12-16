@@ -13,19 +13,31 @@
   ];
 
   const map = L.map("map", {
-    worldCopyJump: true,
+    center: [-2.5, 118],
+    zoom: 5,
+    minZoom: 4,
+    maxBounds: [
+      [-90, -180],
+      [90, 180]
+    ],
+    maxBoundsViscosity: 1.0
   });
+
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     maxZoom: 19,
     attribution: "&copy; OpenStreetMap contributors",
-    noWrap: false,
+    noWrap: true,
+    bounds: [
+      [-90, -180],
+      [90, 180]
+    ]
   }).addTo(map);
 
   const allLayerGroup = L.layerGroup().addTo(map);
   let featureLayers = [];
 
-  let activeCategories = []; 
-  let activeTitleQuery = ""; 
+  let activeCategories = [];
+  let activeTitleQuery = "";
 
   function colorByCat(cat) {
     const palette = {
@@ -89,10 +101,6 @@
         }
       }
     });
-
-    if (visibleBounds) {
-      map.fitBounds(visibleBounds, { padding: [20, 20] });
-    }
 
     updateCountInfo();
   }
